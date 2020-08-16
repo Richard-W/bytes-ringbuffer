@@ -1,7 +1,8 @@
 extern crate bytes;
 
-use bytes::{Buf, BufMut};
 use std::mem::MaybeUninit;
+
+pub use bytes::{Buf, BufMut};
 
 /// Fixed-capacity buffer
 #[derive(Debug, Clone)]
