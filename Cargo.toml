@@ -1,0 +1,8 @@
+[package]
+name = "bytes-ringbuffer"
+version = "0.1.0"
+authors = ["Richard Wiedenhöft <richard@wiedenhoeft.xyz>"]
+edition = "2018"
+
+[dependencies]
+bytes = "0.5"
