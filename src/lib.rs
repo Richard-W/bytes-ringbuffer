@@ -1,3 +1,17 @@
+//! This crate provides a simple ringbuffer that implements the [Buf](../bytes/trait.Buf.html) and
+//! [BufMut](../bytes/trait.BufMut.html) traits from the [bytes](../bytes/index.html) crate.
+//!
+//! ```
+//! # extern crate bytes_ringbuffer;
+//! # use bytes_ringbuffer::*;
+//! # fn main() {
+//! let mut buf = RingBuffer::new(4);
+//! buf.put_u16(1234);
+//! buf.put_u16(5671);
+//! assert_eq!(buf.get_u16(), 1234);
+//! assert_eq!(buf.get_u16(), 5671);
+//! # }
+//! ```
 extern crate bytes;
 
 use std::mem::MaybeUninit;
