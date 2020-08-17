@@ -1,8 +1,13 @@
 [package]
 name = "bytes-ringbuffer"
+description = "Ringbuffer for the bytes crate"
 version = "0.1.0"
 authors = ["Richard Wiedenhöft <richard@wiedenhoeft.xyz>"]
+license = "MIT"
 edition = "2018"
+documentation = "https://docs.rs/bytes-ringbuffer"
+homepage = "https://github.com/richard-w/bytes-ringbuffer"
+repository = "https://github.com/richard-w/bytes-ringbuffer.git"
 
 [dependencies]
 bytes = "0.5"
